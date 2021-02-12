@@ -1,0 +1,4 @@
+#exit - ^D
+apk update
+apk upgrade
+apk add --update alpine-sdk

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>New person</title>
+</head>
+<body>
+
+<form th:method="POST" action="/">
+    <label for="name">Enter name:    </label>
+    <input name="name" type="text" id="name"/>
+    <br/>
+
+    <label for="surname">Enter surname: </label>
+    <input name="surname" type="text" id="surname"/>
+    <br/>
+
+    <label for="position">Enter position:  </label>
+    <input name="position" type="text" id="position"/>
+    <br/>
+
+    <input type="submit" class="secondary" value="Create!"/>
+</form>
+
+</body>
+</html>

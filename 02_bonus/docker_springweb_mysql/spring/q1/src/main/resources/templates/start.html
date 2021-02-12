@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<div class="col-md col-sm-12" style="position: relative; text-align: center;">
+    <p>
+    <h2>Add new person <a href="/new">here</a></h2>
+    </p>
+    <table class="hoverable">
+        <caption>Persons</caption>
+        <thead>
+        <tr>
+            <td><h3>Name</h3></td>
+            <td><h3>Surname</h3></td>
+            <td><h3>Position</h3></td>
+        </tr>
+        </thead>
+        <tbody>
+        <div th:each="person:${people}">
+            <tr>
+                <td th:text="${person.getName()}"/>
+                <td th:text="${person.getSurname()}"/>
+                <td th:text="${person.getPosition()}"/>
+            </tr>
+        </div>
+        </tbody>
+    </table>
+</div>
+</body>
+<footer>
+<!--        <div style="position: relative; text-align: center;">-->
+<!--            <iframe class="section media" width="640" height="360" src="https://www.youtube.com/embed/0ia3ZLgVEE0"></iframe>-->
+<!--            <iframe class="section media" width="640" height="360" src="https://www.youtube.com/embed/ScMzIvxBSi4"></iframe>-->
+    <div style="position: relative; text-align: center;">
+        <figure>
+            <img width="750" height="450" src="van.jpg"/>
+        </figure>
+    </div>
+<!--        </div>-->
+</footer>
+</html>
